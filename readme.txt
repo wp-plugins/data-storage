@@ -12,8 +12,8 @@ Fully customizable, searchable, editable database table. Equipped with many feat
 
 == Description ==
 
-Fully customizable, searchable, editable database table. Whatever data that gets submitted on front-end form will be saved in a table at the back-end of your site. You can easily customize the front-end form in the options page. You also have many options for the field types and limit the user to insert the relevant/correct information.
-There are many other features for the data table and the fron-end form: 
+Fully customizable, searchable, editable database table. Whatever data that gets submitted on front-end form will be saved in a table at the back-end of your site. The inserted data can be edited or deleted in the plugin admin page whenever you want. You can easily customize the front-end form in the options page. You also have many options for the field types and limit the user to insert the relevant/correct information.
+There are many other features for the data table and the front-end form: 
 
 *Equipped with instant data search in the backend of your website.
 
