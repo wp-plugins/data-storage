@@ -12,13 +12,14 @@ Fully customizable, searchable, editable database table. Equipped with many feat
 
 == Description ==
 
-Fully customizable, searchable, editable database table:
+Fully customizable, searchable, editable database table. Whatever data that gets submitted on front-end form will be saved in a table at the back-end of your site. You can easily customize the front-end form in the options page. You also have many options for the field types and limit the user to insert the relevant/correct information.
+There are many other features for the data table and the fron-end form:
 
 *Equipped with instant data search in the backend of your website.
 
 *Instant feedback to user upon submitting the form.
 
-*Equipped with many different type of form fields which limits the user to enter relevant/correct information in case it was needed.
+*Equipped with many different type of form fields (text field, multiple choice, drop down, number field, date field, checkbox, email, tel, url, etc) which limits the user to enter relevant/correct information in case it was needed.
 
 *Perfect for collecting people's information, inquiries and many other purposes.
 
