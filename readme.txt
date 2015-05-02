@@ -71,8 +71,6 @@ It can be easily achieved by making a slight change in 2 lines of the main file.
 
 5. Options page- Section 4: Update admin (you) when receiving a new entry. You'll be updated with all the details that has been submitted on your website.
 
-6. Front-end: The user will see this message after the form submission in case there is no thank you/confirmation page is set in the options page.
-
 == Changelog ==
 
 = 1.0.1 =
