@@ -412,7 +412,7 @@ function ghazaledb_options_page(){
     <li>If you ever had a question or problem or maybe wanted some modifications to this plugin, just <a href="mailto:ghsh88@gmail.com">drop me a line</a> :)</li>
     </ol></i></td></tr></table>
 
-        <br><input type="submit" name="submit" value="Save Settings"><br>
+        <br><input type="submit" name="submit_options" value="Save Settings"><br>
         <div id="accordion">
         <h3>Set Up Form Fields</h3>
         <div class="overflow"><div><p>
@@ -533,7 +533,7 @@ function ghazaledb_options_page(){
     ?>"/><i>Enter your desired email to be updated once a form is submitted.</i></p>
     </div>
 </div>
-        <br><input type="submit" name="submit" value="Save Settings">
+        <br><input type="submit" name="submit_options" value="Save Settings">
 
 
     </form>
