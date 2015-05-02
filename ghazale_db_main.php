@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Data Storage
-Plugin URI: https://github.com/ghsh88/ghazale/releases/download/v1.0.0/ghazaledb_communication.zip
+Plugin URI: https://github.com/ghsh88/ghazale/releases/tag/v1.0.0
 Description: Fully customizable,searchable,editable database table. Equipped with instant data search in the backend of your website, instant feedback to user upon submitting the form. Perfect for collecting people's information, inquiries and many other purposes. In addition of having the data in the backend, you also have the option to receive the details of the submitted data, right in your email as well. There's also the option to send Thank you/Confirmation email to the user with customized text and address as well as many other features.
 Author: Ghazale Shirazi
 Version: 1.0.1
