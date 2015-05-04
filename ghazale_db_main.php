@@ -124,11 +124,11 @@ function ghazaledb_form_shortcode()
 
                         break;
                     case "File Upload{$count}":
-                        $output .= "<br><input type=\"file\" id=\"ghazaledb_file_upload_". $count ."\" name=\"file_".$count."\" " . $required . " accept=\"".get_option("ghazaledb_accept_upload_{$count}")."\">"."<br>";
+                        $output .= "<br><input type=\"file\" id=\"ghazaledb_file_upload_". $count ."\" name=\"file_".$count."\" " . $required . " accept=\"".get_option("ghazaledb_accept_upload_{$count}")."\">"."<br><br>";
                         break;
 
                     case "Instruction Text{$count}":
-                        $output .= "<br>";
+                        $output .= "<br><br>";
                         break;
                     default:
                         break;
