@@ -8,7 +8,7 @@ Stable tag: 2.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-You can have multiple different forms at the same time and can save the inputs.  Collect data, information, etc. Equipped with many cool features.
+Fully Customizable and downloadable data table creator. Create multiple different forms and save the inputs. Collect data, information, etc.
 
 == Description ==
 
