@@ -555,8 +555,8 @@ function ghazale_ds_frontend_forms_shortcode($atts){
                 if ((str_replace(array($table_name, '_fields'), '', $fields_table)) == $atts['form']) {
                     $sql_fields = "SELECT * FROM " . $fields_table;
                     $fields = $wpdb->get_results($sql_fields, ARRAY_A);
-                    echo  "<p style='background-color: #06B9FD; color: #fff; line-height: 2em;border-left: 5px solid #00008b'>" . ghazale_ds_update(). "</p>";
-                    $output = "<form action=\"\" method=\"post\" id=\"{$fields_table}\" enctype=\"multipart/form-data\">";
+                    $output =  "<p style='background-color: #06B9FD; color: #fff; line-height: 2em;border-left: 5px solid #00008b'>" . ghazale_ds_update(). "</p>";
+                    $output .= "<form action=\"\" method=\"post\" id=\"{$fields_table}\" enctype=\"multipart/form-data\">";
                     foreach ($fields as $field) {
                         if($field['field_required'] == "Required"){
                             $output .= $field['field_name'] . "<span style = \"color: red\">*</span>" . ":";
