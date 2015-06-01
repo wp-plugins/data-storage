@@ -392,7 +392,7 @@ function ghazale_ds_created_forms(){
             }
         }
     }else{
-        echo "<div id = \"message\" class = \"updated\" >No form(s) to display. Please Create a new form first. Once you create your first form and add fields to it, it will appear on this page in an organized table.</div>";
+        echo "<div style=\"color:#ffffff ;background-color:#47a447 ; padding: 10px\"><strong>No form(s) to display. Please Create a new form first. Once you create your first form and add fields to it, it will appear on this page in an organized table.</strong></div>";
     }
     echo "</div>";
 
@@ -895,7 +895,7 @@ function ghazale_ds_form_inputs(){
         }
         echo "</div>";
     }else{
-        echo "<div id = \"message\" class = \"updated\" >No inputs to display. Once you had inputs from your form, they will appear on this page in an organized table.</div>";
+        echo "<div style=\"color:#ffffff ;background-color:#47a447 ; padding: 10px\"><strong>No inputs to display. Once you had inputs from your form, they will appear on this page in an organized table.</strong></div>";
     }
 }
 function ghazale_ds_form_inputs_admin_menu(){
