@@ -392,7 +392,7 @@ function ghazale_ds_created_forms(){
             }
         }
     }else{
-        echo "<br>No form(s) to display. Please Create a new form first.</br>";
+        echo "<div id = \"message\" class = \"updated\" >No form(s) to display. Please Create a new form first. Once you create your first form and add fields to it, it will appear on this page in an organized table.</div>";
     }
     echo "</div>";
 
@@ -894,6 +894,8 @@ function ghazale_ds_form_inputs(){
 
         }
         echo "</div>";
+    }else{
+        echo "<div id = \"message\" class = \"updated\" >No inputs to display. Once you had inputs from your form, they will appear on this page in an organized table.</div>";
     }
 }
 function ghazale_ds_form_inputs_admin_menu(){
