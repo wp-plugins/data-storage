@@ -36,39 +36,13 @@ function ghazale_ds_welcome_page(){
     $results = $wpdb->get_results($sql, ARRAY_A);
     ?>
     <h2>Welcome to Data Storage (v2.1.1)</h2>
-    <p><strong>The shortcode in the new version of Data Storage has changed to have dynamic attribute which lets you to have multiple (and unlimited!) different forms at the same time.</strong></p>
-    <div style="color:#ffffff ;background-color:#47a447 ; padding: 10px"><strong>As soon as you create a new form and add form fields to your newly created form, you will see the automatically generated shortcode for the corresponding form in the "Forms" section under "Data Storage" menu. So you don't have to memorize any shortcode. It's always there for your reference for all of your forms.</strong></div>
-    <hr>
-    <h3>Making Your First Form</h3>
-    <p>To make a new form, follow these steps:</p>
-    <ol>
-        <li>Click on "Create New Form" menu. Name your new form and create it.</li>
-        <li>Click on "Add Fields" menu. Select your newly created form, name your field and choose field type (e.g.: Text Input, Checkbox, DropDown, etc). You can also choose whether you want this field to be "Required" or not.</li>
-        <li>Repeat number 2 and add as much as fields you like! (You can add unlimited number of fields to your form)</li>
-        <li>Your form is ready to use! Click on "Form" menu. You can see the automatically generated shortcode for this form to use on any post or page. You can also edit or delete any of the form fields here.</li>
-        <li>Enjoy!</li>
-
-    </ol>
-    <hr>
-    <h3>General Settings</h3>
-    <p>In the "General Settings" tab, I've put many options:</p>
-    <ol>
-        <li>You can have Captcha on your forms to fight against spams and robots.</li>
-        <li>You can change the word on "Submit" button.</li>
-        <li>You can choose to update admin when there is a new form submission.</li>
-        <li>You can choose to send confirmation email to user with custom message.</li>
-        <li>You can have a custom page redirection upon form submission</li>
-        <i>Even if you don't wish to redirect user to another page, the plugin will handle the feedback for the user. So they realize that their entry has been successfully submitted.</i>
-    </ol>
-    <hr>
-    <div style="color:#707070; background-color: #cccccc ; border: 1px solid #cccccc; padding: 10px">If you ever had questions, suggestions or comments feel free to express yourself on support forum or <a href="mailto:ghsh88@gmail.com">drop me a line</a> :)</div>
     <?php
     if($results) {
         ?>
-        <h3>Old Table</h3>
+        <h3>Your Old Table</h3>
         <div style="border: 1px solid #404040; padding: 10px">If you previously had the old version of Data Storage, your old data is still safe. You can view or download it here.
         <br><i>It is recommended to use the new version of Data Storage as it has more security, more flexibility, more stability, and ability to have multiple forms (and tables).</i></br></div>
-        <p><input type="button" class="ds_show_hide_old_table" value="Show/Hide Old Table" style="background-color: #404040; border: #404040; color: #ffffff; cursor: pointer" /></p>
+        <p><input type="button" class="ds_show_hide_old_table" value="Show My Old Table" style="background-color: #404040; border: #404040; color: #ffffff; cursor: pointer" /></p>
         <hr>
         <div class="div_show_hide_old_table">
         <p><input type="button" name="ds_download_old_table_csv" class="ds_download_old_table_csv" value="Download Table In CSV Format" /><i> After you downloaded the table, rename the file and put <strong>".csv"</strong> at the end of the file name to be able to open it in excel.</i></p>
@@ -138,6 +112,36 @@ function ghazale_ds_welcome_page(){
         </div>
     <?php
     }
+    ?>
+    <p><strong>The shortcode in the new version of Data Storage has changed to have dynamic attribute which lets you to have multiple (and unlimited!) different forms at the same time.</strong></p>
+    <div style="color:#ffffff ;background-color:#47a447 ; padding: 10px"><strong>As soon as you create a new form and add form fields to your newly created form, you will see the automatically generated shortcode for the corresponding form in the "Forms" section under "Data Storage" menu. So you don't have to memorize any shortcode. It's always there for your reference for all of your forms.</strong></div>
+    <hr>
+    <h3>Making Your First Form</h3>
+    <p>To make a new form, follow these steps:</p>
+    <ol>
+        <li>Click on "Create New Form" menu. Name your new form and create it.</li>
+        <li>Click on "Add Fields" menu. Select your newly created form, name your field and choose field type (e.g.: Text Input, Checkbox, DropDown, etc). You can also choose whether you want this field to be "Required" or not.</li>
+        <li>Repeat number 2 and add as much as fields you like! (You can add unlimited number of fields to your form)</li>
+        <li>Your form is ready to use! Click on "Form" menu. You can see the automatically generated shortcode for this form to use on any post or page. You can also edit or delete any of the form fields here.</li>
+        <li>Enjoy!</li>
+
+    </ol>
+    <h3>Having Your First Inputs</h3>
+    <p>Once you put the shorcode of your created form on your desired page, you can see the awesome form that you've just made. When this form is filled with data and gets submitted, you can see the inserted data in the backend of your site in "Inputs" section under "Data Storage" menu.</p>
+    <hr>
+    <h3>General Settings</h3>
+    <p>In the "General Settings" tab, I've put many options:</p>
+    <ol>
+        <li>You can have Captcha on your forms to fight against spams and robots.</li>
+        <li>You can change the word on "Submit" button.</li>
+        <li>You can choose to update admin when there is a new form submission.</li>
+        <li>You can choose to send confirmation email to user with custom message.</li>
+        <li>You can have a custom page redirection upon form submission</li>
+        <i>Even if you don't wish to redirect user to another page, the plugin will handle the feedback for the user. So they realize that their entry has been successfully submitted.</i>
+    </ol>
+    <hr>
+    <div style="color:#707070; background-color: #cccccc ; border: 1px solid #cccccc; padding: 10px">If you ever had questions, suggestions or comments feel free to express yourself on support forum or <a href="mailto:ghsh88@gmail.com">drop me a line</a> :)</div>
+    <?php
 }
 function ghazale_ds_welcome_page_admin_menu(){
     $page_suffix = add_menu_page('Data Storage','Data Storage','manage_options','ds-data-storage','ghazale_ds_welcome_page', plugin_dir_url(__FILE__) . 'images/ic_data_storage.png');
@@ -895,7 +899,7 @@ function ghazale_ds_form_inputs(){
         }
         echo "</div>";
     }else{
-        echo "<div style=\"color:#ffffff ;background-color:#47a447 ; padding: 10px\"><strong>No inputs to display. Once you had inputs from your form, they will appear on this page in an organized table.</strong></div>";
+        echo "<div style=\"color:#ffffff ;background-color:#47a447 ; padding: 10px\"> <strong>No inputs to display. Once you had inputs from your form, they will appear on this page in an organized table.</strong></div>";
     }
 }
 function ghazale_ds_form_inputs_admin_menu(){
