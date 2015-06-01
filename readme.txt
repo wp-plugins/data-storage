@@ -12,7 +12,7 @@ Fully Customizable and downloadable data table creator. Create multiple differen
 
 == Description ==
 
-Fully customizable, editable, downloadable data table creator. You can have multiple different forms and their corresponding tables in one wordpress system. Equipped with instant feedback to user upon submitting the form. Perfect for collecting people's data, information, inquiries and many other purposes such as online contests. In addition of having the data in the backend, you also have the option to receive the details of the submitted data, right in your email as well. There's also the option to send Thank you/Confirmation email to the user with customized text and address as well as many other cool features.
+Fully customizable, editable, downloadable data table creator. You can have multiple different forms and save their inputs in the backend or download the form inputs in CSV format. Equipped with instant feedback to user upon submitting the form. Perfect for collecting people's data, information, inquiries and many other purposes such as online contests. In addition of having the data in the backend, you also have the option to receive the details of the submitted data, right in your email as well. There's also the option to send Thank you/Confirmation email to the user with customized text and address as well as many other cool features.
 You can use this plugin to make long and complicated forms, or to make short forms as simple as a contact form with Captcha feature.
 
 * Ability to make multiple different forms and saving the corresponding data in their corresponding tables.
