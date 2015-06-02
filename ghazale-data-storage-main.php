@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Data Storage
-Plugin URI: http://ghazale.co.nf/index.php/2015/05/30/data-storage-version-2-1-1
+Plugin URI: http://ghazale.co.nf/data-storage-version-2-1-1-is-released/
 Description: Fully customizable,editable,downloadable data table creator. You can have multiple different forms and their corresponding tables in one wordpress system. Equipped with instant feedback to user upon submitting the form. Perfect for collecting people's data, information, inquiries and many other purposes such as online contests. In addition of having the data in the backend, you also have the option to receive the details of the submitted data, right in your email as well. There's also the option to send Thank you/Confirmation email to the user with customized text and address as well as many other cool features.
 Author: Ghazale Shirazi
 Version: 2.1.1
