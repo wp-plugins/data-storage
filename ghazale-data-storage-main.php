@@ -316,7 +316,7 @@ add_action('admin_init','ghazale_ds_register_settings');
 
 function alphanumericAndSpace( $string )
 {
-    return !preg_match('/[^\w\p{L}\p{N}\p{Pd} @-_.,\/:]/u', $string);
+    return !preg_match('/[^\w\p{L}\p{N}\p{Pd} @-_.,\/:()]/u', $string);
 }
 
 
