@@ -8,7 +8,7 @@ Stable tag: 2.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Customizable and Downloadable data table creator. You can have multiple different forms at the same time and can save the inputs.  Collect data, information, etc.
+Customizable and Downloadable data table creator. You can have multiple different forms at the same time and can save the inputs.  Collect data, etc.
 
 == Description ==
 
