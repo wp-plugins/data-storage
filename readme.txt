@@ -43,9 +43,14 @@ You can use this plugin to make long and complicated forms, or to make short for
 * Ability to permanently delete the form and its corresponding inputs in case you didn't want that form.
 * Translation ready.
 
+**Translations**
+
+* English - Default
+* German: Deutsch
+
 == Translations ==
 
-* English - default
+* English - Default
 * German: Deutsch
 
 == Installation ==
