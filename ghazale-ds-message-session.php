@@ -19,10 +19,21 @@ function ghazale_ds_message(){
 
 function ghazale_ds_update(){
     if(isset($_SESSION["ds-update"])){
-        $output = $_SESSION["ds-update"];
+        $output = "<div style='background-color: #b6c669; color: #fff;border-left: 5px solid #47a447; padding-left: 10px'>";
+        $output .= $_SESSION["ds-update"];
+        $output .= "</div>";
 
         //clear message after use
         $_SESSION["ds-update"]=null;
+        return $output;
+    }
+    if(isset($_SESSION["ds-error"])){
+        $output = "<div style='background-color: #e14d43; color: #fff;border-left: 5px solid #ff0000; padding-left: 10px'>";
+        $output .= $_SESSION["ds-error"];
+        $output .= "</div>";
+
+        //clear message after use
+        $_SESSION["ds-error"]=null;
         return $output;
     }
 }

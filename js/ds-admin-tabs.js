@@ -3,11 +3,12 @@
  */
 jQuery(document).ready(function($) {
     $("#form_tabs").tabs();
-    $(".ds_download_table_csv").each(function(){
-        $(".ds_download_table_csv").click(function(){
+        $("input[class^=ds_download_table_csv_]").click(function(){
             //alert("clicked");
-            $('table[class*=download_]').tableExport({type:'csv',escape:'false'});
+            var currentTable = $('#'+$(this).attr('class'));
+            currentTable.tableExport({type:'csv',escape:'false',tableName:'yourTableName'});
+            //alert(($('#'+$(this).attr('class'))).attr('id'));
+            //alert($(this).attr('class'));
         });
-    });
 
 });

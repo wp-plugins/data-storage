@@ -2,9 +2,9 @@
 Contributors: ghazale
 Donate link: http://www.vafashelter.com/main/en/helping-us/paypal-donation
 Tags: database, form, multiple forms, unlimited fields, unlimited forms, data download, download csv table, confirmation email, data types
-Requires at least: 3.0.1
+Requires at least: 4.0.1
 Tested up to: 4.2.2
-Stable tag: 2.2.2
+Stable tag: 2.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,7 @@ You can use this plugin to make long and complicated forms, or to make short for
 * Ability to edit, delete and reorder the form fields.
 * Dynamically creates separate file upload folders named the same as tables to organize file uploads.
 * Instant feedback to user upon submitting the form.
+* Ability to limit the file upload size.
 * Ability to create the form in all languages. You can even change the word on "Submit" button to match your language and match your form usage.
 * Ability to receive user input in all languages.
 * Equipped with many different type of form fields which limits the user to enter relevant/correct information in case it was needed.
@@ -41,6 +42,11 @@ You can use this plugin to make long and complicated forms, or to make short for
 * Ability to edit or permanently delete the created fields. All from the backend of your website.
 * Ability to permanently delete the form and its corresponding inputs in case you didn't want that form.
 * Translation ready.
+
+== Translations ==
+
+* English - default
+* German: Deutsch
 
 == Installation ==
 
@@ -72,6 +78,14 @@ Make sure you have selected "Email" as the "Field Type" when defining the form f
 
 == Changelog ==
 
+=2.2.5=
+* Added German Translation
+* Added useful hints
+* bugs fixed
+
+=2.2.3=
+* Ability to limit the size of file upload
+
 =2.2.2=
 * Ability to reorder form fields
 * Bugs fixed
@@ -93,6 +107,10 @@ Make sure you have selected "Email" as the "Field Type" when defining the form f
 
 == Upgrade Notice ==
 
+=2.2.5=
+Added the ability to limit the size of file upload. Remaining bugs are fixed.
+Added German translation.
+
 = 2.2.2 =
 Important bug fixes and features are made to this version. Update immediately to take advantage of the new release.
 
@@ -104,5 +122,7 @@ First Release
 
 == Addittional Info ==
 
+This plugin is translation ready. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful:)
+
 You don't have to memorize any shortcode for your forms. The correspong shortcode for each form is generated dynamically when you create a new form and they are always available in the "Forms" section under "Data Storage" menu page.
-If you ever had a question,suggestions, comments or just wanted to say hi, you're always welcome to drop me a line :)
+If you ever had a question,suggestions, comments or just wanted to say hi, you're always welcome to drop me a line.

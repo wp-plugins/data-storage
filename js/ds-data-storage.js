@@ -4,6 +4,9 @@
 jQuery(document).ready(function($){
 
    $(".field_ext").hide();
+    if ($(".ghazale_ds_field_type").find("option:selected").text() == "Instruction Text"){
+        $("#ghazale_ds_field_required").slideUp();
+    }
     $(".ghazale_ds_field_type").change(function(){
         var select = $(this).find("option:selected").text();
         switch (select){
@@ -20,12 +23,12 @@ jQuery(document).ready(function($){
             case "Instruction Text":
                 $("#ghazale_ds_field_required").slideUp();
                 $(".field_ext").slideUp();
-                $(".user_guide").slideDown().html("<i style='color: #47a447'>This field type is intended to give instructions to the user in certain parts of the form. (Example: Please write your surname in capital letters.)</i>");
+                $(".user_guide").slideDown().html(object_name.string1);
                 break;
             case "File Upload":
                 $("#ghazale_ds_field_required").slideDown();
                 $(".field_ext").slideUp();
-                $(".user_guide").slideDown().html("<i style='color: #47a447'>The maximum allowed size for file upload depends on your server setting, and is not related to the plugin.</i>");
+                $(".user_guide").slideDown().html(object_name.string2);
                 break;
             default:
                 $(".user_guide").slideUp();

@@ -4,7 +4,7 @@ Plugin Name: Data Storage
 Plugin URI: http://ghazale.co.nf/index.php/2015/05/30/data-storage-version-2-1-1
 Description: Fully customizable,editable,downloadable data table creator. You can have multiple different forms and their corresponding tables in one wordpress system. Equipped with instant feedback to user upon submitting the form. Perfect for collecting people's data, information, inquiries and many other purposes such as online contests. In addition of having the data in the backend, you also have the option to receive the details of the submitted data, right in your email as well. There's also the option to send Thank you/Confirmation email to the user with customized text and address as well as many other cool features.
 Author: Ghazale Shirazi
-Version: 2.2.2
+Version: 2.2.5
 Text Domain: data-storage
 Domain Path: /languages
 Author URI: http://ghazale.co.nf
@@ -37,18 +37,18 @@ function ghazale_ds_welcome_page(){
     $sql = 'SELECT * FROM ' . $table_name . ' ORDER BY id ASC';
     $results = $wpdb->get_results($sql, ARRAY_A);
     ?>
-    <h2>Welcome to Data Storage (v2.2.2)</h2>
+    <h2><?php _e('Welcome to Data Storage (v2.2.5)', 'data-storage'); ?></h2>
     <?php
     if($results) {
         ?>
-        <h3>Your Old Table</h3>
-        <div style="border: 1px solid #404040; padding: 10px">If you previously had the old version of Data Storage, your old data is still safe. You can view or download it here.
-        <br><i>It is recommended to use the new version of Data Storage as it has more security, more flexibility, more stability, and ability to have multiple forms (and tables).</i></br></div>
-        <p><input type="button" class="ds_show_hide_old_table" value="Show My Old Table" style="background-color: #404040; border: #404040; color: #ffffff; cursor: pointer" /></p>
+        <h3><?php _e('Your Old Table','data-storage'); ?></h3>
+        <div style="border: 1px solid #404040; padding: 10px"><?php _e('If you previously had the old version of Data Storage, your old data is still safe. You can view or download it here.', 'data-storage'); ?>
+        <br><i><?php _e('It is recommended to use the new version of Data Storage as it has more security, more flexibility, more stability, and ability to have multiple forms (and tables)','data-storage'); ?>.</i></br></div>
+        <p><input type="button" class="ds_show_hide_old_table" value="<?php _e('Show My Old Table','data-storage'); ?>" style="background-color: #404040; border: #404040; color: #ffffff; cursor: pointer" /></p>
         <hr>
         <div class="div_show_hide_old_table">
-        <p><input type="button" name="ds_download_old_table_csv" class="ds_download_old_table_csv" value="Download Table In CSV Format" /><i> After you downloaded the table, rename the file and put <strong>".csv"</strong> at the end of the file name to be able to open it in excel.</i></p>
-            <p><a href="<?php echo get_admin_url(); ?>admin.php?page=ds-data-storage&ds-old-data-table=ds-totally-delete-old-data-table" style="text-decoration: none" onclick="return confirm('Are you sure? (THIS ACTION CANNOT BE UNDONE)')"><input type="button" value="Totally Delete This Old Table. I Don't Need It" /></a><i> You can totally delete this table if you don't want it anymore</i></p>
+        <p><input type="button" name="ds_download_old_table_csv" class="ds_download_old_table_csv" value="<?php _e('Download Table In CSV Format','data-storage'); ?>" /><i> <?php _e('After you downloaded the table, rename the file and put ".csv" at the end of the file name to be able to open it in excel','data-storage'); ?>.</i></p>
+            <p><a href="<?php echo get_admin_url(); ?>admin.php?page=ds-data-storage&ds-old-data-table=ds-totally-delete-old-data-table" style="text-decoration: none" onclick="return confirm('Are you sure? (THIS ACTION CANNOT BE UNDONE)')"><input type="button" value="<?php _e('Totally Delete This Old Table. I Don\'t Need It','data-storage'); ?>" /></a><i> <?php _e('You can totally delete this table if you don\'t want it anymore', 'data-storage'); ?>'</i></p>
         <table id="ds_old_table" class="table">
             <thead>
             <tr>
@@ -115,41 +115,41 @@ function ghazale_ds_welcome_page(){
     <?php
     }
     ?>
-    <p><strong>The shortcode in the new version of Data Storage has dynamic attribute which lets you to have multiple (and unlimited!) different forms at the same time.</strong></p>
-    <div style="color:#404040 ;background-color:#b6c669 ; padding: 10px"><strong>As soon as you create a new form and add form fields to your newly created form, you will see the automatically generated shortcode for the corresponding form in the "Forms" section under "Data Storage" menu. So you don't have to memorize any shortcode. It's always there for your reference for all of your forms.</strong></div>
+    <p><strong><?php _e('The shortcode in the new version of Data Storage has dynamic attribute which lets you to have multiple (and unlimited!) different forms at the same time','data-storage'); ?>.</strong></p>
+    <div style="color:#404040 ;background-color:#b6c669 ; padding: 10px"><strong><?php _e('As soon as you create a new form and add form fields to your newly created form, you will see the automatically generated shortcode for the corresponding form in the "Forms" section under "Data Storage" menu. So you don\'t have to memorize any shortcode. It\'s always there for your reference for all of your forms','data-storage'); ?>.</strong></div>
     <hr>
-    <div style="color:#404040 ;background-color:#aaffaa ; padding: 10px"><strong>If you liked this plugin and find it helpful, please <a href="https://wordpress.org/support/view/plugin-reviews/data-storage?rate=5#postform">rate it 5 stars!<img src="<?php echo plugins_url('images/5stars.png',__FILE__); ?>"></a> <br>Your <a href="http://www.vafashelter.com/main/en/helping-us/paypal-donation" target="_blank">donation</a> will be used to protect helpless animals. It is highly appreciated! <i>(Please write "plugin" in the comment area on donation page)</i></p></strong><p><a href="http://www.vafashelter.com/main/en/helping-us/paypal-donation" target="_blank"><img src="<?php echo plugins_url('images/btn_donatecc_lg.gif',__FILE__); ?>" alt="btn donatecc lg"></a></p></div>
+    <div style="color:#404040 ;background-color:#aaffaa ; padding: 10px"><strong><?php _e('If you liked this plugin and find it helpful, please rate it 5 stars!','data-storage'); ?><a href="https://wordpress.org/support/view/plugin-reviews/data-storage?rate=5#postform"><img src="<?php echo plugins_url('images/5stars.png',__FILE__); ?>"></a> <br><?php _e('Your donation will be used to protect helpless animals. It is highly appreciated!','data-storage'); ?> <i><?php _e('(Please write "plugin" in the comment area on donation page)','data-storage'); ?></i></p></strong><p><a href="http://www.vafashelter.com/main/en/helping-us/paypal-donation" target="_blank"><img src="<?php echo plugins_url('images/btn_donatecc_lg.gif',__FILE__); ?>" alt="btn donatecc lg"></a></p></div>
     <hr>
-    <h3>Making Your First Form</h3>
-    <p>To make a new form, follow these steps:</p>
+    <h3><?php _e('Making Your First Form','data-storage'); ?></h3>
+    <p><?php _e('To make a new form, follow these steps','data-storage'); ?>:</p>
     <ol>
-        <li>Click on "Create New Form" menu. Name your new form and create it.</li>
-        <li>Click on "Add Fields" menu. Select your newly created form, name your field and choose field type (e.g.: Text Input, Checkbox, DropDown, etc). You can also choose whether you want this field to be "Required" or not.</li>
-        <li>Repeat number 2 and add as much as fields you like! (You can add unlimited number of fields to your form)</li>
-        <li>Your form is ready to use! Click on "Form" menu. You can see the automatically generated shortcode for this form to use on any post or page. You can also edit or delete any of the form fields here.</li>
-        <li>Enjoy!</li>
+        <li><?php _e('Click on "Create New Form" menu. Name your new form and create it.','data-storage'); ?></li>
+        <li><?php _e('Click on "Add Fields" menu. Select your newly created form, name your field and choose field type (e.g.: Text Input, Checkbox, DropDown, etc). You can also choose whether you want this field to be "Required" or not.','data-storage'); ?></li>
+        <li><?php _e('Repeat number 2 and add as much as fields you like! (You can add unlimited number of fields to your form)','data-storage'); ?></li>
+        <li><?php _e('Your form is ready to use! Click on "Form" menu. You can see the automatically generated shortcode for this form to use on any post or page. You can also edit or delete any of the form fields here.','data-storage'); ?></li>
+        <li><?php _e('Enjoy!','data-storage'); ?></li>
 
     </ol>
-    <h3>Having Your First Inputs</h3>
-    <p>Once you put the shorcode of your created form on your desired page, you can see the awesome form that you've just made. When this form is filled with data and gets submitted, you can see the inserted data in the backend of your site in "Inputs" section under "Data Storage" menu.</p>
+    <h3><?php _e('Having Your First Inputs','data-storage'); ?></h3>
+    <p><?php _e('Once you put the shorcode of your created form on your desired page, you can see the awesome form that you\'ve just made. When this form is filled with data and gets submitted, you can see the inserted data in the backend of your site in "Inputs" section under "Data Storage" menu.','data-storage'); ?></p>
     <hr>
-    <h3>General Settings</h3>
-    <p>In the "General Settings" tab, I've put many options:</p>
+    <h3><?php _e('General Settings','data-storage'); ?></h3>
+    <p><?php _e('In the "General Settings" tab, I\'ve put some useful options:','data-storage'); ?></p>
     <ol>
-        <li>You can have Captcha on your forms to fight against spams and robots.</li>
-        <li>You can change the word on "Submit" button.</li>
-        <li>You can choose to update admin when there is a new form submission.</li>
-        <li>You can choose to send confirmation email to user with custom message.</li>
-        <li>You can have a custom page redirection upon form submission</li>
-        <i>Even if you don't wish to redirect user to another page, the plugin will handle the feedback for the user. So they realize that their entry has been successfully submitted.</i>
+        <li><?php _e('You can have Captcha on your forms to fight against spams and robots.','data-storage'); ?></li>
+        <li><?php _e('You can change the word on "Submit" button.','data-storage'); ?></li>
+        <li><?php _e('You can choose to inform admin when there is a new form submission.','data-storage'); ?></li>
+        <li><?php _e('You can choose to send confirmation email to user with custom message.','data-storage'); ?></li>
+        <li><?php _e('You can have a custom page redirection upon form submission','data-storage'); ?></li>
+        <i><?php _e('Even if you don\'t wish to redirect user to another page, the plugin will handle the feedback for the user. So they realize that their entry has been successfully submitted.','data-storage'); ?></i>
     </ol>
     <hr>
-    <div style="color:#707070; background-color: #cccccc ; border: 1px solid #cccccc; padding: 10px">If you ever had questions, suggestions or comments feel free to express yourself on support forum or <a href="mailto:ghsh88@gmail.com">drop me a line</a> :)</div>
+    <div style="color:#707070; background-color: #cccccc ; border: 1px solid #cccccc; padding: 10px"><?php _e('If you ever had questions, suggestions or comments feel free to express yourself on support forum','data-storage'); ?> <a href="mailto:ghsh88@gmail.com"><?php _e('or drop me a line','data-storage'); ?></a> :)</div>
     <?php
 }
 function ghazale_ds_welcome_page_admin_menu(){
     $page_suffix = add_menu_page('Data Storage','Data Storage','manage_options','ds-data-storage','ghazale_ds_welcome_page', plugin_dir_url(__FILE__) . 'images/ic_data_storage.png');
-    add_submenu_page('ds-data-storage','Welcome','Welcome','manage_options','ds-data-storage','ghazale_ds_welcome_page');
+    add_submenu_page('ds-data-storage',__('Welcome','data-storage'),__('Welcome','data-storage'),'manage_options','ds-data-storage','ghazale_ds_welcome_page');
     add_action('admin_print_scripts-'.$page_suffix,'ghazale_ds_download_old_table');
 }
 add_action('admin_menu','ghazale_ds_welcome_page_admin_menu');
@@ -187,14 +187,14 @@ function ghazale_ds_new_form(){
     ?>
     <div xmlns="http://www.w3.org/1999/html"><?php echo ghazale_ds_message(); ?></div>
     <form action="" method="post" id="ghazale_ds_new_form">
-        <h2>Create New Form</h2>
-        Form Name: <input type="text" name="ghazale_ds_new_form_name" id="ghazale_ds_new_form_name" value="<?php if(isset($_POST['ghazale_ds_new_form_name'])){ echo $_POST['ghazale_ds_new_form_name']; }else{ echo '';} ?>"/><i> Please enter letters and numbers only. No spaces.</i>
-        <br><br><input type="submit" name="ghazale_ds_submit_new_form" value="Create Form">
+        <h2><?php _e('Create New Form','data-storage'); ?></h2>
+        <?php _e('Form Name','data-storage'); ?>: <input type="text" name="ghazale_ds_new_form_name" id="ghazale_ds_new_form_name" value="<?php if(isset($_POST['ghazale_ds_new_form_name'])){ echo $_POST['ghazale_ds_new_form_name']; }else{ echo '';} ?>"/><i> <?php _e('Please enter letters and numbers only. No spaces.','data-storage'); ?></i>
+        <br><br><input type="submit" name="ghazale_ds_submit_new_form" value="<?php _e('Create Form','data-storage'); ?>">
     </form>
 <?php
 }
 function ghazale_ds_new_form_admin_menu(){
-    add_submenu_page('ds-data-storage','Create New Form','Create New Form','manage_options','ds-create-new-form','ghazale_ds_new_form');
+    add_submenu_page('ds-data-storage',__('Create New Form','data-storage'),__('Create New Form','data-storage'),'manage_options','ds-create-new-form','ghazale_ds_new_form');
 }
 add_action('admin_menu','ghazale_ds_new_form_admin_menu');
 
@@ -237,7 +237,7 @@ function ghazale_ds_add_fields(){
         <div><?php echo ghazale_ds_message(); ?></div>
         <h2><?php _e('Add Fields To The Form', 'data-storage'); ?></h2>
         <p><strong><?php _e('Add fields to your forms as much as you like!','data-storage'); ?></strong></p>
-        <p><i><?php _e('Note: You cannot add fields to the forms that has already received inputs. The forms that have inputs are locked against changes. If you wish to edit or add fields to those forms, you should first delete their correspondent input data.','data-storage'); ?></i></p>
+        <p><i><?php _e('Note: You cannot add fields to the forms that has already received inputs. The forms that have inputs are locked against changes. If you wish to edit or add fields to those forms, you should first delete their correspondent input data.', 'data-storage'); ?></i></p>
         <?php _e('Select Form','data-storage'); ?>: <select name="ghazale_ds_select_form">
             <option value=""> -- <?php _e('Select Form','data-storage'); ?> -- </option>
             <?php
@@ -256,7 +256,7 @@ function ghazale_ds_add_fields(){
             }
             ?>
         </select><i> <?php _e('Select the form to which you want to add the field','data-storage'); ?></i><br><br>
-        <?php _e('Field Name','data-storage'); ?>: <input type="text" name="ghazale_ds_field_name" id="ghazale_ds_field_name" maxlength="300" placeholder="Enter Field Name" value="<?php if(isset($_POST['ghazale_ds_field_name'])){ echo $_POST['ghazale_ds_field_name']; }else{ echo ''; } ?>"/><i> Example: Name, Email, Address, etc... (Should be Alphanumeric. Can have space and allowed Symbols: @-_.,\/:())</i><br><br>
+        <?php _e('Field Name','data-storage'); ?>: <input type="text" name="ghazale_ds_field_name" id="ghazale_ds_field_name" maxlength="300" placeholder="Enter Field Name" value="<?php if(isset($_POST['ghazale_ds_field_name'])){ echo trim($_POST['ghazale_ds_field_name']); }else{ echo ''; } ?>"/><i> <?php _e('Example: Name, Email, Address, etc... (Should be Alphanumeric. Can have space and allowed Symbols: @-_.,\/:())','data-storage'); ?></i><br><br>
         <?php $type_array = array("Text Field","Text Area","Drop Down","Multiple Choice","Email","File Upload","Number","Telephone","URL","Date","CheckBox","Instruction Text"); ?>
         <?php _e('Field Type','data-storage'); ?>: <select name="ghazale_ds_field_type" class="ghazale_ds_field_type">
             <option value=""> -- <?php _e('Select Field Type','data-storage'); ?> -- </option>
@@ -270,7 +270,7 @@ function ghazale_ds_add_fields(){
             }
             ?>
         </select><i> <?php _e('Select the field type','data-storage'); ?></i><br><br>
-        <span  id="ghazale_ds_field_required"><input type="checkbox" name="ghazale_ds_field_required" value="Required" <?php if(isset($_POST['ghazale_ds_field_required'])){echo 'checked';} ?>/> Required Field <i> ( required fields will be marked by * in the form )</i><br><br></span>
+        <span  id="ghazale_ds_field_required"><input type="checkbox" name="ghazale_ds_field_required" value="Required" <?php if(isset($_POST['ghazale_ds_field_required'])){echo 'checked';} ?>/> <?php _e('Required Field','data-storage'); ?> <i> (<?php _e('required fields will be marked by * in the form','data-storage'); ?>)</i><br><br></span>
         <p class="user_guide"></p>
         <div class="field_ext">
             <i><?php _e('You can have up to 10 values for this field','data-storage'); ?> :</i><br>
@@ -287,20 +287,29 @@ function ghazale_ds_add_fields(){
 }
 
 function ghazale_ds_add_fields_admin_menu(){
-    $page_suffix = add_submenu_page('ds-data-storage','Add Fields','Add Fields','manage_options','ds-add-field','ghazale_ds_add_fields');
+    $page_suffix = add_submenu_page('ds-data-storage',__('Add Fields','data-storage'),__('Add Fields','data-storage'),'manage_options','ds-add-field','ghazale_ds_add_fields');
     add_action('admin_print_scripts-' . $page_suffix, 'ghazale_ds_admin_field_ext');
 }
 add_action('admin_menu','ghazale_ds_add_fields_admin_menu');
+
+
+function ghazale_ds_admin_init_field_ext(){
+    wp_register_script('ds-field-ext',plugins_url('js/ds-data-storage.js',__FILE__),array('jquery'));
+// Localize the script with new data
+    $translation_array = array(
+        'string1' => __( 'This field type is intended to give instructions to the user in certain parts of the form. (Example: Please write your surname in capital letters.)', 'data-storage' ),
+        'string2'   => __('The maximum allowed size for file upload can be adjusted in the General Settings but it also depends on your server settings', 'data-storage'),
+        'a_value' => '10'
+    );
+    wp_localize_script( 'ds-field-ext', 'object_name', $translation_array );
+}
+add_action('admin_init','ghazale_ds_admin_init_field_ext');
 
 function ghazale_ds_admin_field_ext(){
     wp_enqueue_script('ds-field-ext');
 
 }
-function ghzale_ds_admin_init_field_ext(){
-    wp_register_script('ds-field-ext',plugins_url('js/ds-data-storage.js',__FILE__),array('jquery'));
 
-}
-add_action('admin_init','ghzale_ds_admin_init_field_ext');
 
 /**
  * register settings
@@ -316,6 +325,7 @@ function ghazale_ds_register_settings(){
     register_setting('ghazale_ds_settings','ghazale_ds_update_admin');
     register_setting('ghazale_ds_settings','ghazale_ds_update_admin_email');
     register_setting('ghazale_ds_settings', 'ghazale_ds_submit_button_word');
+    register_setting('ghazale_ds_settings', 'ghazale_ds_max_upload_size');
 }
 add_action('admin_init','ghazale_ds_register_settings');
 
@@ -327,7 +337,7 @@ add_action('admin_init','ghazale_ds_register_settings');
 
 function alphanumericAndSpace( $string )
 {
-    return !preg_match('/[^\w\p{L}\p{N}\p{Pd} @-_.,\/:()]/u', $string);
+    return !preg_match('/[^\w\p{L}\p{N}\p{Pd} @-_.,\/:()\n\r]/u', $string);
 }
 
 
@@ -346,6 +356,9 @@ function ghazale_ds_add_fields_to_table(){
             global $wpdb;
             if(!empty($output)){
                 $wpdb->insert($_POST['ghazale_ds_select_form'], array('field_name' => stripcslashes(trim($_POST['ghazale_ds_field_name'])), 'field_type' => $_POST['ghazale_ds_field_type'], 'field_ext'=> $output , 'field_required'=> (isset($_POST['ghazale_ds_field_required'])? $_POST['ghazale_ds_field_required'] : '')), array('%s'));
+                $_SESSION['ds-message'] = esc_html__('Field Added Successfully','data-storage');
+            }elseif($_POST['ghazale_ds_field_type'] == "Instruction Text"){
+                $wpdb->insert($_POST['ghazale_ds_select_form'], array('field_name' => stripcslashes(trim($_POST['ghazale_ds_field_name'])), 'field_type' => $_POST['ghazale_ds_field_type']), array('%s'));
                 $_SESSION['ds-message'] = esc_html__('Field Added Successfully','data-storage');
             }else {
                 $wpdb->insert($_POST['ghazale_ds_select_form'], array('field_name' => stripcslashes(trim($_POST['ghazale_ds_field_name'])), 'field_type' => $_POST['ghazale_ds_field_type'],'field_required'=> (isset($_POST['ghazale_ds_field_required'])? $_POST['ghazale_ds_field_required'] : '')), array('%s'));
@@ -388,8 +401,8 @@ function ghazale_ds_created_forms(){
                 if (!empty($fields_query)) {
                     echo "<h2>". ucfirst(str_replace(array($table_name,'_fields'),'',$fields_table)) ."</h2>";
                     echo "<p><strong>Shortcode : </strong>[data-storage form=\"". str_replace(array($table_name,'_fields'),'',$fields_table) . "\"]</p>";
-                    if(!empty($inputs_query)){ echo '<p><i>'.__('This form has already received inputs and cannot be modified. If you wish to modify this form, you should first delete','data-storage').' <strong>'.__('its corresponding input data','data-storage').'</strong> '.__('from "Inputs" menu.','data-storage').'</i></p>';}
-                    echo "<table class=\"table\"><tr><th>Delete</th><th>Edit</th><th>Reorder</th><th>Field Name</th><th>Field Type</th><th>Extensions</th><th>Required</th></tr>";
+                    if(!empty($inputs_query)){ echo '<p><i>'.__('This form has already received inputs and cannot be modified. If you wish to modify this form, you should first delete its corresponding input data from "Inputs" menu.','data-storage').'</i></p>';}
+                    echo "<table class=\"table\"><tr><th>".__('Delete','data-storage')."</th><th>".__('Edit','data-storage')."</th><th>Reorder</th><th>Field Name</th><th>Field Type</th><th>Extensions</th><th>Required</th></tr>";
                     foreach($fields_query as $fields){
                         echo "<tr>";
                         echo "<td><a href='". get_admin_url() ."admin.php?page=ds-forms&ds-del-field-id=".$fields['id'] ."&ds-del-field-table=". $fields_table."#". $fields_table."' style=\"text-decoration: none\" onclick=\"return confirm('Are you sure? (THIS ACTION CANNOT BE UNDONE)');\"><input type=\"button\" value=\"Delete\" ".(!empty($inputs_query)? 'disabled': '')."></a> </td>";
@@ -404,7 +417,7 @@ function ghazale_ds_created_forms(){
                     echo "</table><br>";
 
                 }else{
-                    echo "<br>".__('There are no fields for this form yet.','data-storage')." <a href=\"".get_admin_url() ."admin.php?page=ds-add-field\"> ".__('Add fields','data-storage')."</a> ".__('to this form','data-storage')."<br><br>";
+                    echo "<br>".__('There are no fields for this form yet.','data-storage')." <a href=\"".get_admin_url() ."admin.php?page=ds-add-field\"> ".__('Add fields to this form')."</a><br><br>";
                 }
                 echo "<a href=\"".get_admin_url() ."admin.php?page=ds-forms&ds-total-del-form-table=". $fields_table ."\" onclick=\"return confirm('Are you sure? (THIS ACTION CANNOT BE UNDONE)');\" ><input type=\"button\" value=\"".__('Totally Delete This Form AND Its Corresponding Inputs Table.','data-storage')."\"></a>";
                 echo "</div>";
@@ -417,7 +430,7 @@ function ghazale_ds_created_forms(){
 
 }
 function ghazale_ds_created_tables_admin_menu(){
-    $page_suffix = add_submenu_page('ds-data-storage','Forms','Forms','manage_options','ds-forms','ghazale_ds_created_forms');
+    $page_suffix = add_submenu_page('ds-data-storage',__('Forms','data-storage'),__('Forms','data-storage'),'manage_options','ds-forms','ghazale_ds_created_forms');
     add_action('admin_print_scripts-' . $page_suffix, 'ghazale_ds_admin_form_table_tabs');
 }
 add_action('admin_menu','ghazale_ds_created_tables_admin_menu');
@@ -440,22 +453,24 @@ add_action('admin_init','ghazale_ds_admin_form_table_tabs_register');
 function ghazale_ds_reorder_form_fields(){
     if(isset($_GET['ds-field-reorder-down-id']) && isset($_GET['ds-field-reorder-down-table'])){
         global $wpdb;
-        $next_available_id = 'SELECT id FROM '. $_GET['ds-field-reorder-down-table'] . ' WHERE id > '.$_GET['ds-field-reorder-down-id']. ' LIMIT 1';
+        $next_available_id = 'SELECT id FROM '. $_GET['ds-field-reorder-down-table'] . ' WHERE id > '.$_GET['ds-field-reorder-down-id']. ' ORDER BY id ASC LIMIT 1';
         $next_id = $wpdb->get_var($next_available_id);
 
         // create temporary table
-        $wpdb->query('CREATE TEMPORARY TABLE temp (field_name VARCHAR (300) COLLATE utf8_bin, field_type VARCHAR (300) COLLATE ascii_bin, field_ext VARCHAR (300) COLLATE utf8_bin, field_required VARCHAR (8) COLLATE ascii_bin)');
-        $current_row = 'SELECT * FROM '. $_GET['ds-field-reorder-down-table'] . ' WHERE id='. $_GET['ds-field-reorder-down-id'];
+        if($wpdb->get_var("SHOW TABLES LIKE 'temp'") == NULL) {
+            $wpdb->query('CREATE TEMPORARY TABLE temp (field_name VARCHAR (300) COLLATE utf8_bin, field_type VARCHAR (300) COLLATE ascii_bin, field_ext VARCHAR (300) COLLATE utf8_bin, field_required VARCHAR (8) COLLATE ascii_bin)');
+        }
+        $current_row = 'SELECT field_name,field_type,field_ext,field_required FROM '. $_GET['ds-field-reorder-down-table'] . ' WHERE id='. $_GET['ds-field-reorder-down-id'];
         $current_row_query = $wpdb->get_results($current_row,ARRAY_A);
 
         //store original value of current row in temp table
         foreach($current_row_query as $field){
-           $wpdb->insert('temp', array('field_name'=>$field['field_name'], 'field_type'=>$field['field_type'],'field_ext'=>$field['field_ext'], 'field_required'=>$field['field_required'] ));
+            $wpdb->insert('temp', array('field_name'=>$field['field_name'], 'field_type'=>$field['field_type'],'field_ext'=>$field['field_ext'], 'field_required'=>$field['field_required'] ));
         }
         $temp_result = $wpdb->get_results('SELECT * FROM temp',ARRAY_A);
 
         //get the values of next row
-        $next_row = 'SELECT * FROM '.$_GET['ds-field-reorder-down-table'] . ' WHERE id='. $next_id;
+        $next_row = 'SELECT field_name,field_type,field_ext,field_required FROM '.$_GET['ds-field-reorder-down-table'] . ' WHERE id='. $next_id;
         $next_row_query = $wpdb->get_results($next_row,ARRAY_A);
 
         //replace the values of rows
@@ -466,7 +481,7 @@ function ghazale_ds_reorder_form_fields(){
             $wpdb-> update($_GET['ds-field-reorder-down-table'],array('field_name'=>$result['field_name'], 'field_type'=>$result['field_type'],'field_ext'=>$result['field_ext'], 'field_required'=>$result['field_required']) , array('id'=>$next_id));
         }
 
-        wp_redirect(get_admin_url().'admin.php?page=ds-forms');
+                        wp_redirect(get_admin_url().'admin.php?page=ds-forms');
     }
     if(isset($_GET['ds-field-reorder-up-id']) && isset($_GET['ds-field-reorder-up-table'])){
         global $wpdb;
@@ -474,8 +489,10 @@ function ghazale_ds_reorder_form_fields(){
         $previous_id = $wpdb->get_var($previous_available_id);
 
         //create temporary table
-        $wpdb->query('CREATE TEMPORARY TABLE temp (field_name VARCHAR (300) COLLATE utf8_bin, field_type VARCHAR (300) COLLATE ascii_bin, field_ext VARCHAR (300) COLLATE utf8_bin, field_required VARCHAR (8) COLLATE ascii_bin)');
-        $current_row = 'SELECT * FROM '. $_GET['ds-field-reorder-up-table'] . ' WHERE id='. $_GET['ds-field-reorder-up-id'];
+        if($wpdb->get_var("SHOW TABLES LIKE 'temp'") == NULL) {
+            $wpdb->query('CREATE TEMPORARY TABLE temp (field_name VARCHAR (300) COLLATE utf8_bin, field_type VARCHAR (300) COLLATE ascii_bin, field_ext VARCHAR (300) COLLATE utf8_bin, field_required VARCHAR (8) COLLATE ascii_bin)');
+        }
+        $current_row = 'SELECT field_name,field_type,field_ext,field_required FROM '. $_GET['ds-field-reorder-up-table'] . ' WHERE id='. $_GET['ds-field-reorder-up-id'];
         $current_row_query = $wpdb->get_results($current_row,ARRAY_A);
 
         //store original value of current row in temp table
@@ -485,7 +502,7 @@ function ghazale_ds_reorder_form_fields(){
         $temp_result = $wpdb->get_results('SELECT * FROM temp',ARRAY_A);
 
         //get the values of previous row
-        $previous_row = 'SELECT * FROM '.$_GET['ds-field-reorder-up-table'] . ' WHERE id='. $previous_id;
+        $previous_row = 'SELECT field_name,field_type,field_ext,field_required FROM '.$_GET['ds-field-reorder-up-table'] . ' WHERE id='. $previous_id;
         $previous_row_query = $wpdb->get_results($previous_row,ARRAY_A);
 
         //replace the values of rows
@@ -495,8 +512,9 @@ function ghazale_ds_reorder_form_fields(){
         foreach($temp_result as $result){
             $wpdb-> update($_GET['ds-field-reorder-up-table'],array('field_name'=>$result['field_name'], 'field_type'=>$result['field_type'],'field_ext'=>$result['field_ext'], 'field_required'=>$result['field_required']) , array('id'=>$previous_id));
         }
-        wp_redirect(get_admin_url().'admin.php?page=ds-forms');
+                        wp_redirect(get_admin_url().'admin.php?page=ds-forms');
     }
+
 }
 add_action('init','ghazale_ds_reorder_form_fields');
 /**
@@ -561,7 +579,8 @@ function ghazale_ds_edit_field_admin_page(){
             }
             ?>
         </select><br><br>
-        <input type="checkbox" name="ghazale_ds_field_required_edit" value="Required" <?php if($field['field_required'] == 'Required'){echo 'checked';} ?>/> Required Field <i> ( required fields will be marked by * in the form )</i><br><br>
+        <span  id="ghazale_ds_field_required"><input type="checkbox" name="ghazale_ds_field_required_edit" value="Required" <?php if($field['field_required'] == 'Required'){echo 'checked';} ?>/> <?php _e('Required Field','data-storage'); ?> <i> (<?php _e('required fields will be marked by * in the form','data-storage'); ?>)</i><br><br></span>
+        <p class="user_guide"></p>
         <div class="field_ext">
             <i><?php _e('You can have up to 10 values for this field','data-storage'); ?> :</i><br>
             <?php
@@ -571,8 +590,8 @@ function ghazale_ds_edit_field_admin_page(){
             }
             ?>
         </div>
-        <input type="submit" name="ghazale_ds_edit_field" value="<?php _e('Update Field','data-storage'); ?>">
-        <a href="<?php echo get_admin_url()?>admin.php?page=ds-forms#<?php echo $_GET['ds-edit-field-table'] ?>" style="text-decoration: none"><input type="button" value="<?php _e('Back to Forms','data-storage'); ?>"></a>
+        <p><input type="submit" name="ghazale_ds_edit_field" value="<?php _e('Update Field','data-storage'); ?>">
+        <a href="<?php echo get_admin_url()?>admin.php?page=ds-forms#<?php echo $_GET['ds-edit-field-table'] ?>" style="text-decoration: none"><input type="button" value="<?php _e('Back to Forms','data-storage'); ?>"></a></p>
     </form>
 <?php
 }
@@ -598,7 +617,7 @@ function ghazale_ds_update_field(){
             global $wpdb;
             $id = $_GET['ds-edit-field-id'];
             $table = $_GET['ds-edit-field-table'];
-            $wpdb->update($table, array('field_name' => (isset($_POST['ghazale_ds_edit_field_name'])? $_POST['ghazale_ds_edit_field_name']: ''), 'field_type' => (isset($_POST['ghazale_ds_edit_field_type'])? $_POST['ghazale_ds_edit_field_type']: ''), 'field_ext'=> $output, 'field_required'=> (isset($_POST['ghazale_ds_field_required_edit'])? $_POST['ghazale_ds_field_required_edit']: '')),array('id'=>$id), array('%s'));
+            $wpdb->update($table, array('field_name' => (isset($_POST['ghazale_ds_edit_field_name'])? trim($_POST['ghazale_ds_edit_field_name']): ''), 'field_type' => (isset($_POST['ghazale_ds_edit_field_type'])? $_POST['ghazale_ds_edit_field_type']: ''), 'field_ext'=> $output, 'field_required'=> (isset($_POST['ghazale_ds_field_required_edit'])? $_POST['ghazale_ds_field_required_edit']: '')),array('id'=>$id), array('%s'));
             $_SESSION['ds-message'] = esc_html__('Updated Successfully','data-storage');
 
         }else{
@@ -638,8 +657,65 @@ function ghazale_ds_frontend_forms_shortcode($atts){
                 if ((str_replace(array($table_name, '_fields'), '', $fields_table)) == $atts['form']) {
                     $sql_fields = "SELECT * FROM " . $fields_table;
                     $fields = $wpdb->get_results($sql_fields, ARRAY_A);
-                    $output =  "<p style='background-color: #b6c669; color: #fff;border-left: 5px solid #47a447; padding-left: 10px'>" . ghazale_ds_update(). "</p>";
-                    $output .= "<form action=\"\" method=\"post\" id=\"{$fields_table}\" enctype=\"multipart/form-data\">";
+                    $output =  "<p>" . ghazale_ds_update(). "</p>";
+                    $output .= "<form action=\"\" method=\"post\" id=\"ds-form {$fields_table}\" enctype=\"multipart/form-data\">";
+                    ?>
+                    <script>
+                        jQuery(document).ready(function($) {
+                            $('input[id^=ds_reset_upload_field_]').change(function () {
+                                if ($(this).get(0).files.length > 0) { // only if a file is selected
+                                    var fileSize = $(this).get(0).files[0].size;
+                                    var allowedSize = '<?php echo get_option('ghazale_ds_max_upload_size'); ?>';
+                                    if (fileSize > allowedSize && allowedSize>0) {
+                                        alert('Maximum allowed size for file upload is '+ (allowedSize/1000000) + 'MB');
+                                        reset($(this));
+                                    }
+                                }
+                            });
+                            $('#submit_ghazale_ds_form').click(function(){
+                                var formData = new FormData($('#ds-form')[0]);
+                                $.ajax({
+                                    url: '<?php echo plugins_url('ghazale_data_storage-main.php',__FILE__); ?>',  //Server script to process data
+                                    type: 'POST',
+                                    xhr: function() {  // Custom XMLHttpRequest
+                                        var myXhr = $.ajaxSettings.xhr();
+                                        if(myXhr.upload){ // Check if upload property exists
+                                            myXhr.upload.addEventListener('progress',progressHandlingFunction, false); // For handling the progress of the upload
+                                        }
+                                        return myXhr;
+                                    },
+                                    //Ajax events
+                                    beforeSend: function(){
+                                        $('.ds-submitting').html('Uploading...');
+//                                        alert('Uploading');
+                                    },
+                                    success: function() {
+                                        $('.ds-submitting').html('Success...');
+//                                        alert('Success');
+                                    },
+                                    error: function(){
+//                                        $('.ds-submitting').html('Failed...');
+                                    },
+                                    complete: function(){
+                                        $('.ds-submitting').html('Results Returned');
+//                                        alert('Results returned');
+                                    },
+                                    // Form data
+                                    data: formData,
+                                    //Options to tell jQuery not to process data or worry about content-type.
+                                    cache: false,
+                                    contentType: false,
+                                    processData: false
+                                });
+                            });
+                            function progressHandlingFunction(e){
+                                if(e.lengthComputable){
+                                    $('progress').attr({value:e.loaded,max:e.total});
+                                }
+                            }
+                        });
+                    </script>
+                    <?php
                     foreach ($fields as $field) {
                         if($field['field_required'] == "Required"){
                             $output .= $field['field_name'] . "<span style = \"color: red\">*</span>" . ":";
@@ -733,7 +809,7 @@ function ghazale_ds_frontend_forms_shortcode($atts){
                         }
                         $output .= $a." + ".$b." = <input type=\"text\" name=\"ds-captcha\" size =\"10\"/>" . "<br><br>";
                     }
-                    $output .= "<input type=\"submit\" name=\"submit_" . $fields_table . "\" value=\"";
+                    $output .= "<input type=\"submit\" id=\"submit_ghazale_ds_form\" name=\"submit_" . $fields_table . "\" value=\"";
                     if(get_option('ghazale_ds_submit_button_word')){
                         $output .= get_option('ghazale_ds_submit_button_word');
                     }else{
@@ -742,6 +818,7 @@ function ghazale_ds_frontend_forms_shortcode($atts){
                     $output .="\" >";
 
                     $output .= "</form>";
+                    $output .= "<p><progress></progress> <span class=\"ds-submitting\"></span></p>";
                     return $output;
 
 
@@ -857,9 +934,9 @@ function ghazale_ds_insert_field_inputs(){
                                         $user_email = $_POST[$field['id']];
                                     }
                                     $new_entry[$field['field_name']] = (isset($_POST[$field['id']])? $_POST[$field['id']]: '');
-                                }elseif($field['field_type'] == "Multiple Choice"){
+                                }elseif($field['field_type'] == "Multiple Choice" && !empty($_POST["ds_multiplechoice_".$field['id']])){
                                     $new_entry[$field['field_name']] = implode(" | ", $multiple_choice);
-                                }elseif($field['field_type'] == "File Upload"){
+                                }elseif($field['field_type'] == "File Upload" && !empty($movefile)){
                                     $new_entry[$field['field_name']] = $movefile['url'];
                                 }
 
@@ -896,12 +973,12 @@ function ghazale_ds_insert_field_inputs(){
                             }
 
                         }elseif(!empty($empty_required)){
-                            $_SESSION["ds-update"] = esc_html__('All required fields should be filled. Required fields are marked with (*)','data-storage');
+                            $_SESSION["ds-error"] = esc_html__('All required fields should be filled. Required fields are marked with (*)','data-storage');
                         } elseif(!empty($not_alphanumeric)) {
-                            $_SESSION["ds-update"] = esc_html__('Symbols are not allowed for security. Please reconsider your entries.','data-storage');
+                            $_SESSION["ds-error"] = esc_html__('Some Symbols are not allowed for security. Please reconsider your entries. Allowed symbols are: @-_.,\/:()','data-storage');
                         }
                     }else{
-                        $_SESSION["ds-update"] = esc_html__('The entered captcha is incorrect. Please enter the correct value.','data-storage');
+                        $_SESSION["ds-error"] = esc_html__('The entered captcha is incorrect. Please enter the correct value.','data-storage');
                     }
                 }
             }
@@ -936,9 +1013,9 @@ function ghazale_ds_form_inputs(){
                 echo "<div id=\"".$table ."\">";
 
                 echo "<h3>" . ucfirst(str_replace(array($tables, "_inputs"), "", $table)) . " Inputs</h3>";
-                echo "<p><input type=\"button\" name=\"ds_download_table_csv\" class=\"ds_download_table_csv\" value=\"Download Table In CSV Format\" /><i> After you downloaded the table, rename the file and put <strong>\".csv\"</strong> at the end of the file name.</i></p>";
-                echo "<table class = \"table download_".$table."\">";
-                $inputs_sql = "SELECT * FROM " . $table;
+                echo "<p><input type=\"button\" name=\"ds_download_table_csv\" class=\"ds_download_table_csv_".$table."\" value=\"".__('Download Table In CSV Format','data-storage')."\" /><i>". __('After you downloaded the table, rename the file and put .csv at the end of the file name.','data-storage') ."</i></p>";
+                echo "<table class = \"table\" id=\"ds_download_table_csv_".$table."\">";
+                $inputs_sql = "SELECT * FROM " . $table. " ORDER BY id ASC";
                 $inputs = $wpdb->get_results($inputs_sql, ARRAY_A);
 
                 foreach($field_tables as $field_table){
@@ -947,13 +1024,13 @@ function ghazale_ds_form_inputs(){
                             $fields_sql = "SELECT id,field_name,field_type FROM ". $field_table_single;
                             $fields = $wpdb->get_results($fields_sql,ARRAY_A);
                             if(!empty($inputs)){
-                                $instructions_field_id ='';
+                                $instructions_field_id = array();
                                 echo "<tr>";
                                 foreach($fields as $field){
                                     if($field['field_type'] != 'Instruction Text') {
                                         echo "<th>" . $field['field_name'] . "</th>";
                                     }else{
-                                        $instructions_field_id = $field['id'];
+                                        array_push($instructions_field_id, $field['id']);
                                     }
                                 }
                                 echo "</tr>";
@@ -970,7 +1047,7 @@ function ghazale_ds_form_inputs(){
                                     if($input['field_id'] == $first_id) {
                                         echo "<tr>";
                                     }
-                                    if($input['field_id'] != $instructions_field_id) {
+                                    if(!in_array($input['field_id'], $instructions_field_id)) {
                                         foreach ($input as $key => $input_single) {
                                             if ($input_single != "" && $key != 'id' && $key != 'field_id') {
                                                 if (substr($input_single, 0, 4) === "http") {
@@ -989,7 +1066,7 @@ function ghazale_ds_form_inputs(){
                                 }
 
                             }else{
-                                    echo "There is no input";
+                                    echo __('There is no input','data-storage');
                             }
                         }
                     }
@@ -1007,7 +1084,7 @@ function ghazale_ds_form_inputs(){
     }
 }
 function ghazale_ds_form_inputs_admin_menu(){
-    $page_suffix = add_submenu_page('ds-data-storage','Inputs','Inputs','manage_options','ds-form-entries','ghazale_ds_form_inputs');
+    $page_suffix = add_submenu_page('ds-data-storage',__('Inputs','data-storage'),__('Inputs','data-storage'),'manage_options','ds-form-entries','ghazale_ds_form_inputs');
     add_action('admin_print_scripts-' . $page_suffix, 'ghazale_ds_admin_input_table_tabs');
 }
 add_action('admin_menu','ghazale_ds_form_inputs_admin_menu');
@@ -1102,7 +1179,7 @@ function ghazale_ds_general_settings(){
         if(get_option('ghazale_ds_custom_captcha_msg')){
             echo get_option('ghazale_ds_custom_captcha_msg');
         } else{
-            echo "Prove you are not a robot!";
+            echo __('Prove you are not a robot!','data-storage');
         }
         ?></textarea><br><br>
         <h4><?php _e('Submit Button Value','data-storage'); ?></h4>
@@ -1115,10 +1192,14 @@ function ghazale_ds_general_settings(){
         }
         ?>"/><br><br>
             </div>
+        <h3><?php _e('Maximum allowed size for file uploads','data-storage'); ?></h3>
+            <div>
+                <?php _e('Maximum allowed size for upload fields', 'data-storage'); ?>:<input type="text" placeholder="5000000" size="30" name="ghazale_ds_max_upload_size" value="<?php echo get_option('ghazale_ds_max_upload_size'); ?>" /><br><i> <?php _e('Write the size in "Byte" metric. (Example: If the maximum allowed upload size is 5Mb, then put 5000000 in this field)','data-storage'); ?></i>
+            </div>
         <h3><?php _e('Page Redirection','data-storage'); ?></h3>
             <div>
         <?php _e('Custom Thank You/Confirmation Page Redirection.','data-storage'); ?><br>
-        <?php _e('Redirection Page URL','data-storage'); ?>: <input type="url" placeholder="<?php _e('Should start with http','data-storage'); ?>" size="30" name="ghazale_ds_page_redirection" value="<?php echo get_option('ghazale_ds_page_redirection'); ?>" /><i> <?php _e('If you do not wish to redirect user, leave it blank.','data-storage'); ?>'</i><br><br>
+        <?php _e('Redirection Page URL','data-storage'); ?>: <input type="url" placeholder="<?php _e('Should start with http','data-storage'); ?>" size="30" name="ghazale_ds_page_redirection" value="<?php echo get_option('ghazale_ds_page_redirection'); ?>" /><i> <?php _e('If you do not wish to redirect user, leave it blank.','data-storage'); ?></i><br><br>
             </div>
         <h3><?php _e('Confirmation Email','data-storage'); ?></h3>
             <div>
@@ -1135,11 +1216,11 @@ function ghazale_ds_general_settings(){
         <?php _e('Message','data-storage'); ?>: <i> <?php _e('(Confirmation/ Thank you Email Message)','data-storage'); ?></i><br>
         <textarea name="ghazale_ds_confirmation_msg" rows="5" cols="40" ><?php echo get_option('ghazale_ds_confirmation_msg'); ?></textarea><br><br>
             </div>
-        <h3><?php _e('Update Admin','data-storage'); ?></h3>
+        <h3><?php _e('Inform Admin','data-storage'); ?></h3>
             <div>
         <input type="checkbox" name="ghazale_ds_update_admin" value="1" <?php
         checked(get_option('ghazale_ds_update_admin'), 1);
-        ?> /> <?php _e('Update admin when new entry is submitted','data-storage'); ?> <br><br>
+        ?> /> <?php _e('Inform admin when new entry is submitted','data-storage'); ?> <br><br>
         <?php _e('Admin Email','data-storage'); ?> : <input type="email" name="ghazale_ds_update_admin_email" value="<?php
         if(get_option('ghazale_ds_update_admin_email')) {
             echo get_option('ghazale_ds_update_admin_email');
@@ -1150,12 +1231,12 @@ function ghazale_ds_general_settings(){
             </div>
         </div>
         <br>
-        <input type="submit" name="ghazale-ds-submit-general_settings" value="Save Settings">
+        <input type="submit" name="ghazale-ds-submit-general_settings" value="<?php _e('Save Settings','data-storage'); ?>">
     </form>
 <?php
 }
 function ghazale_ds_general_settings_admin_menu(){
-    $page_suffix = add_submenu_page('ds-data-storage','General Settings','General Settings','manage_options','ds-general-settings','ghazale_ds_general_settings');
+    $page_suffix = add_submenu_page('ds-data-storage',__('General Settings','data-storage'),__('General Settings','data-storage'),'manage_options','ds-general-settings','ghazale_ds_general_settings');
     add_action('admin_print_scripts-'. $page_suffix,'ghazale_ds_accordion_settings');
 }
 add_action('admin_menu','ghazale_ds_general_settings_admin_menu');
