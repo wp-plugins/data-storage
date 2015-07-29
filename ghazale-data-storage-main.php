@@ -37,7 +37,7 @@ function ghazale_ds_welcome_page(){
     $sql = 'SELECT * FROM ' . $table_name . ' ORDER BY id ASC';
     $results = $wpdb->get_results($sql, ARRAY_A);
     ?>
-    <h2><?php _e('Welcome to Data Storage (v2.2.5)', 'data-storage'); ?></h2>
+    <h2><?php _e('Welcome to Data Storage (v2.2.6)', 'data-storage'); ?></h2>
     <?php
     if($results) {
         ?>
