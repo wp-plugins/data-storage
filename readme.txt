@@ -3,7 +3,7 @@ Contributors: ghazale
 Donate link: http://www.vafashelter.com/main/en/helping-us/paypal-donation
 Tags: database, form, multiple forms, unlimited fields, unlimited forms, data download, download csv table, confirmation email, data types
 Requires at least: 4.0.1
-Tested up to: 4.2.2
+Tested up to: 4.2.3
 Stable tag: 2.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
