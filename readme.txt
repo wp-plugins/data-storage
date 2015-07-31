@@ -85,6 +85,7 @@ Make sure you have selected "Email" as the "Field Type" when defining the form f
 
 =2.2.7=
 * Some remaining errors fixed
+* Complete German translation
 * A minor bug that might happen in rare cases will be fixed in future release (Please the Other Notes section)
 
 =2.2.6=
