@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: DATA STORAGE 2.2.2\n"
+"Project-Id-Version: DATA STORAGE 2.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-15 20:04+0400\n"
+"POT-Creation-Date: 2015-11-08 18:32+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: GHAZALE SHIRAZI <ghsh88@gmail.com>\n"
 "Language-Team: GHAZALE SHIRAZI <ghsh88@gmail.com>\n"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Show My Old Table"
 msgstr ""
 
-#: ghazale-data-storage-main.php:50 ghazale-data-storage-main.php:976
+#: ghazale-data-storage-main.php:50 ghazale-data-storage-main.php:980
 msgid "Download Table In CSV Format"
 msgstr ""
 
@@ -52,9 +52,9 @@ msgid ""
 "of the file name to be able to open it in excel"
 msgstr ""
 
-#: ghazale-data-storage-main.php:51 ghazale-data-storage-main.php:408
-#: ghazale-data-storage-main.php:422 ghazale-data-storage-main.php:1035
-#: ghazale-data-storage-main.php:1036
+#: ghazale-data-storage-main.php:51 ghazale-data-storage-main.php:411
+#: ghazale-data-storage-main.php:425 ghazale-data-storage-main.php:1031
+#: ghazale-data-storage-main.php:1043 ghazale-data-storage-main.php:1044
 msgid "Are you sure? (THIS ACTION CANNOT BE UNDONE)"
 msgstr ""
 
@@ -143,7 +143,7 @@ msgid ""
 "your site in \"Inputs\" section under \"Data Storage\" menu."
 msgstr ""
 
-#: ghazale-data-storage-main.php:136 ghazale-data-storage-main.php:1199
+#: ghazale-data-storage-main.php:136 ghazale-data-storage-main.php:1346
 msgid "General Settings"
 msgstr ""
 
@@ -192,43 +192,43 @@ msgstr ""
 msgid "Welcome"
 msgstr ""
 
-#: ghazale-data-storage-main.php:190 ghazale-data-storage-main.php:197
+#: ghazale-data-storage-main.php:194 ghazale-data-storage-main.php:201
 msgid "Create New Form"
 msgstr ""
 
-#: ghazale-data-storage-main.php:191
+#: ghazale-data-storage-main.php:195
 msgid "Form Name"
 msgstr ""
 
-#: ghazale-data-storage-main.php:191
+#: ghazale-data-storage-main.php:195
 msgid "Please enter letters and numbers only. No spaces."
 msgstr ""
 
-#: ghazale-data-storage-main.php:192
+#: ghazale-data-storage-main.php:196
 msgid "Create Form"
 msgstr ""
 
-#: ghazale-data-storage-main.php:215
+#: ghazale-data-storage-main.php:219
 msgid "Form Created Successfully"
 msgstr ""
 
-#: ghazale-data-storage-main.php:217
+#: ghazale-data-storage-main.php:221
 msgid "That name already exists"
 msgstr ""
 
-#: ghazale-data-storage-main.php:221
+#: ghazale-data-storage-main.php:225
 msgid "The form name SHOULD be alphanumeric. Please enter a valid name"
 msgstr ""
 
-#: ghazale-data-storage-main.php:238
+#: ghazale-data-storage-main.php:242
 msgid "Add Fields To The Form"
 msgstr ""
 
-#: ghazale-data-storage-main.php:239
+#: ghazale-data-storage-main.php:243
 msgid "Add fields to your forms as much as you like!"
 msgstr ""
 
-#: ghazale-data-storage-main.php:240
+#: ghazale-data-storage-main.php:244
 msgid ""
 "Note: You cannot add fields to the forms that has already received inputs. "
 "The forms that have inputs are locked against changes. If you wish to edit "
@@ -236,333 +236,370 @@ msgid ""
 "input data."
 msgstr ""
 
-#: ghazale-data-storage-main.php:241 ghazale-data-storage-main.php:242
+#: ghazale-data-storage-main.php:245 ghazale-data-storage-main.php:246
 msgid "Select Form"
 msgstr ""
 
-#: ghazale-data-storage-main.php:258
+#: ghazale-data-storage-main.php:262
 msgid "Select the form to which you want to add the field"
 msgstr ""
 
-#: ghazale-data-storage-main.php:259 ghazale-data-storage-main.php:570
+#: ghazale-data-storage-main.php:263 ghazale-data-storage-main.php:573
 msgid "Field Name"
 msgstr ""
 
-#: ghazale-data-storage-main.php:259
+#: ghazale-data-storage-main.php:263
 msgid ""
 "Example: Name, Email, Address, etc... (Should be Alphanumeric. Can have "
-"space and allowed Symbols: @-_.,\\/:?!;&~())"
+"space and allowed Symbols: @-_.,\\/:?'!;&~())"
 msgstr ""
 
-#: ghazale-data-storage-main.php:261 ghazale-data-storage-main.php:572
+#: ghazale-data-storage-main.php:265 ghazale-data-storage-main.php:575
 msgid "Field Type"
 msgstr ""
 
-#: ghazale-data-storage-main.php:262 ghazale-data-storage-main.php:573
+#: ghazale-data-storage-main.php:266 ghazale-data-storage-main.php:576
 msgid "Select Field Type"
 msgstr ""
 
-#: ghazale-data-storage-main.php:272
+#: ghazale-data-storage-main.php:276
 msgid "Select the field type"
 msgstr ""
 
-#: ghazale-data-storage-main.php:273 ghazale-data-storage-main.php:584
+#: ghazale-data-storage-main.php:277 ghazale-data-storage-main.php:587
 msgid "Required Field"
 msgstr ""
 
-#: ghazale-data-storage-main.php:273 ghazale-data-storage-main.php:584
+#: ghazale-data-storage-main.php:277 ghazale-data-storage-main.php:587
 msgid "required fields will be marked by * in the form"
 msgstr ""
 
-#: ghazale-data-storage-main.php:276 ghazale-data-storage-main.php:587
-msgid "You can have up to 10 values for this field"
+#: ghazale-data-storage-main.php:280 ghazale-data-storage-main.php:590
+msgid "You can have up to 12 values for this field"
 msgstr ""
 
-#: ghazale-data-storage-main.php:284
+#: ghazale-data-storage-main.php:288
 msgid "Add Field"
 msgstr ""
 
-#: ghazale-data-storage-main.php:290
+#: ghazale-data-storage-main.php:294
 msgid "Add Fields"
 msgstr ""
 
-#: ghazale-data-storage-main.php:300
+#: ghazale-data-storage-main.php:304
 msgid ""
 "This field type is intended to give instructions to the user in certain "
 "parts of the form. (Example: Please write your surname in capital letters.)"
 msgstr ""
 
-#: ghazale-data-storage-main.php:301
+#: ghazale-data-storage-main.php:305
 msgid ""
 "The maximum allowed size for file upload can be adjusted in the General "
 "Settings but it also depends on your server settings"
 msgstr ""
 
-#: ghazale-data-storage-main.php:359 ghazale-data-storage-main.php:362
-#: ghazale-data-storage-main.php:365
+#: ghazale-data-storage-main.php:362 ghazale-data-storage-main.php:365
+#: ghazale-data-storage-main.php:368
 msgid "Field Added Successfully"
 msgstr ""
 
-#: ghazale-data-storage-main.php:368
+#: ghazale-data-storage-main.php:371
 msgid ""
 "All fields are required. Please make sure you have filled all fields (Also "
 "make sure the entered Field Name is not containing disallowed symbols)"
 msgstr ""
 
-#: ghazale-data-storage-main.php:404
+#: ghazale-data-storage-main.php:407
 msgid ""
 "This form has already received inputs and cannot be modified. If you wish to "
 "modify this form, you should first delete its corresponding input data from "
 "\"Inputs\" menu."
 msgstr ""
 
-#: ghazale-data-storage-main.php:405
+#: ghazale-data-storage-main.php:408 ghazale-data-storage-main.php:1000
 msgid "Delete"
 msgstr ""
 
-#: ghazale-data-storage-main.php:405
+#: ghazale-data-storage-main.php:408
 msgid "Edit"
 msgstr ""
 
-#: ghazale-data-storage-main.php:420
+#: ghazale-data-storage-main.php:423
 msgid "There are no fields for this form yet."
 msgstr ""
 
-#: ghazale-data-storage-main.php:420
+#: ghazale-data-storage-main.php:423
 msgid "Add fields to this form"
 msgstr ""
 
-#: ghazale-data-storage-main.php:422
+#: ghazale-data-storage-main.php:425
 msgid "Totally Delete This Form AND Its Corresponding Inputs Table."
 msgstr ""
 
-#: ghazale-data-storage-main.php:427
+#: ghazale-data-storage-main.php:430
 msgid ""
 "No form(s) to display. Please Create a new form first. Once you create your "
 "first form and add fields to it, it will appear on this page in an organized "
 "table."
 msgstr ""
 
-#: ghazale-data-storage-main.php:433
+#: ghazale-data-storage-main.php:436
 msgid "Forms"
 msgstr ""
 
-#: ghazale-data-storage-main.php:535 ghazale-data-storage-main.php:546
-#: ghazale-data-storage-main.php:1082 ghazale-data-storage-main.php:1103
-#: ghazale-data-storage-main.php:1113
+#: ghazale-data-storage-main.php:538 ghazale-data-storage-main.php:549
+#: ghazale-data-storage-main.php:1128 ghazale-data-storage-main.php:1229
+#: ghazale-data-storage-main.php:1250 ghazale-data-storage-main.php:1260
 msgid "Deleted Successfully"
 msgstr ""
 
-#: ghazale-data-storage-main.php:566
+#: ghazale-data-storage-main.php:569
 msgid "Edit Field"
 msgstr ""
 
-#: ghazale-data-storage-main.php:569
+#: ghazale-data-storage-main.php:572
 msgid "Form"
 msgstr ""
 
-#: ghazale-data-storage-main.php:595
+#: ghazale-data-storage-main.php:598
 msgid "Update Field"
 msgstr ""
 
-#: ghazale-data-storage-main.php:596
+#: ghazale-data-storage-main.php:599
 msgid "Back to Forms"
 msgstr ""
 
-#: ghazale-data-storage-main.php:623
+#: ghazale-data-storage-main.php:626
 msgid "Updated Successfully"
 msgstr ""
 
-#: ghazale-data-storage-main.php:626
+#: ghazale-data-storage-main.php:629
 msgid ""
 "Please make sure the entered Field Name is not containing disallowed "
 "symbols, and also make sure you have selected Field Type"
 msgstr ""
 
-#: ghazale-data-storage-main.php:705
+#: ghazale-data-storage-main.php:708
 msgid "Should Start with http"
 msgstr ""
 
-#: ghazale-data-storage-main.php:718
+#: ghazale-data-storage-main.php:721
 msgid "Clear"
 msgstr ""
 
-#: ghazale-data-storage-main.php:725
+#: ghazale-data-storage-main.php:728
 msgid "Select"
 msgstr ""
 
-#: ghazale-data-storage-main.php:755
+#: ghazale-data-storage-main.php:758
 msgid ""
 "Hold down the Ctrl (windows) / Command (Mac) button to select multiple "
 "options"
 msgstr ""
 
-#: ghazale-data-storage-main.php:777
+#: ghazale-data-storage-main.php:780
 msgid "Submit"
 msgstr ""
 
-#: ghazale-data-storage-main.php:890
+#: ghazale-data-storage-main.php:893
 msgid "Entry Submitted!"
 msgstr ""
 
-#: ghazale-data-storage-main.php:936
+#: ghazale-data-storage-main.php:939
 msgid ""
 "All required fields should be filled. Required fields are marked with (*)"
 msgstr ""
 
-#: ghazale-data-storage-main.php:938
+#: ghazale-data-storage-main.php:941
 msgid ""
 "Some Symbols are not allowed for security. Please reconsider your entries. "
-"Allowed symbols are: @-_.,\\/:?!;&~()"
+"Allowed symbols are: @-_.,\\/:?'!;&~()"
 msgstr ""
 
-#: ghazale-data-storage-main.php:941
+#: ghazale-data-storage-main.php:944
 msgid "The entered captcha is incorrect. Please enter the correct value."
 msgstr ""
 
-#: ghazale-data-storage-main.php:976
+#: ghazale-data-storage-main.php:980
 msgid ""
 "After you downloaded the table, rename the file and put .csv at the end of "
 "the file name."
 msgstr ""
 
-#: ghazale-data-storage-main.php:1029
+#: ghazale-data-storage-main.php:1020 ghazale-data-storage-main.php:1022
+#: ghazale-data-storage-main.php:1025
+msgid "Update"
+msgstr ""
+
+#: ghazale-data-storage-main.php:1031
+msgid "Delete Row"
+msgstr ""
+
+#: ghazale-data-storage-main.php:1037 ghazale-data-storage-main.php:1200
 msgid "There is no input"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1035
+#: ghazale-data-storage-main.php:1043
 msgid "Delete All Data in This Input Table"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1036
+#: ghazale-data-storage-main.php:1044
 msgid "Totally Delete This Input Table AND Its Corresponding Form"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1043
+#: ghazale-data-storage-main.php:1051
 msgid ""
 "No inputs to display. Once you had inputs from your form, they will appear "
 "on this page in an organized table."
 msgstr ""
 
-#: ghazale-data-storage-main.php:1047
+#: ghazale-data-storage-main.php:1056
 msgid "Inputs"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1082 ghazale-data-storage-main.php:1103
-#: ghazale-data-storage-main.php:1113
+#: ghazale-data-storage-main.php:1086
+msgid "Edit Entry"
+msgstr ""
+
+#: ghazale-data-storage-main.php:1087
+msgid "Table Name: "
+msgstr ""
+
+#: ghazale-data-storage-main.php:1088
+msgid "Input ID: "
+msgstr ""
+
+#: ghazale-data-storage-main.php:1089
+msgid "Change Input: "
+msgstr ""
+
+#: ghazale-data-storage-main.php:1092
+msgid "Update Entry"
+msgstr ""
+
+#: ghazale-data-storage-main.php:1092
+msgid "Cancel"
+msgstr ""
+
+#: ghazale-data-storage-main.php:1097
+msgid "Edit Single Entry"
+msgstr ""
+
+#: ghazale-data-storage-main.php:1229 ghazale-data-storage-main.php:1250
+#: ghazale-data-storage-main.php:1260
 msgid ""
 "Note: If you had file uploads in your inputs, you should manually remove "
 "their directory via FTP connection."
 msgstr ""
 
-#: ghazale-data-storage-main.php:1131
+#: ghazale-data-storage-main.php:1278
 msgid "Captcha and Submit Button Value"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1133
+#: ghazale-data-storage-main.php:1280
 msgid "Captcha"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1136
+#: ghazale-data-storage-main.php:1283
 msgid "I want to add captcha to my forms."
 msgstr ""
 
-#: ghazale-data-storage-main.php:1136
+#: ghazale-data-storage-main.php:1283
 msgid "(for fighting against spams and spam bot)"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1137
+#: ghazale-data-storage-main.php:1284
 msgid "Add Custom Captcha Message"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1142
+#: ghazale-data-storage-main.php:1289
 msgid "Prove you are not a robot!"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1145
+#: ghazale-data-storage-main.php:1292
 msgid "Submit Button Value"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1146
+#: ghazale-data-storage-main.php:1293
 msgid "Change the word on \"Submit\" button to whatever you want."
 msgstr ""
 
-#: ghazale-data-storage-main.php:1147
+#: ghazale-data-storage-main.php:1294
 msgid "Submit Button Word"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1155
+#: ghazale-data-storage-main.php:1302
 msgid "Maximum allowed size for file uploads"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1157
+#: ghazale-data-storage-main.php:1304
 msgid "Maximum allowed size for upload fields"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1157
+#: ghazale-data-storage-main.php:1304
 msgid ""
 "Write the size in \"Byte\" metric. (Example: If the maximum allowed upload "
 "size is 5Mb, then put 5000000 in this field)"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1159
+#: ghazale-data-storage-main.php:1306
 msgid "Page Redirection"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1161
+#: ghazale-data-storage-main.php:1308
 msgid "Custom Thank You/Confirmation Page Redirection."
 msgstr ""
 
-#: ghazale-data-storage-main.php:1162
+#: ghazale-data-storage-main.php:1309
 msgid "Redirection Page URL"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1162
+#: ghazale-data-storage-main.php:1309
 msgid "Should start with http"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1162
+#: ghazale-data-storage-main.php:1309
 msgid "If you do not wish to redirect user, leave it blank."
 msgstr ""
 
-#: ghazale-data-storage-main.php:1164
+#: ghazale-data-storage-main.php:1311
 msgid "Confirmation Email"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1168
+#: ghazale-data-storage-main.php:1315
 msgid "Send confirmation Email to user."
 msgstr ""
 
-#: ghazale-data-storage-main.php:1169
+#: ghazale-data-storage-main.php:1316
 msgid "From"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1175
+#: ghazale-data-storage-main.php:1322
 msgid ""
 "This is the email that user will see when they receive confirmation/thank "
 "you email"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1176
+#: ghazale-data-storage-main.php:1323
 msgid "Message"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1176
+#: ghazale-data-storage-main.php:1323
 msgid "(Confirmation/ Thank you Email Message)"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1179
+#: ghazale-data-storage-main.php:1326
 msgid "Inform Admin"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1183
+#: ghazale-data-storage-main.php:1330
 msgid "Inform admin when new entry is submitted"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1184
+#: ghazale-data-storage-main.php:1331
 msgid "Admin Email"
 msgstr ""
 
-#: ghazale-data-storage-main.php:1194
+#: ghazale-data-storage-main.php:1341
 msgid "Save Settings"
 msgstr ""
