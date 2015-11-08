@@ -3,8 +3,8 @@ Contributors: ghazale
 Donate link: http://www.vafashelter.com/main/en/helping-us/paypal-donation
 Tags: database, form, multiple forms, unlimited fields, unlimited forms, data download, download csv table, confirmation email, data types
 Requires at least: 4.0.1
-Tested up to: 4.3
-Stable tag: 2.3.1
+Tested up to: 4.3.1
+Stable tag: 2.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,7 @@ You can use this plugin to make long and complicated forms, or to make short for
 * Ability to limit the file upload size.
 * Ability to create the form in all languages. You can even change the word on "Submit" button to match your language and match your form usage.
 * Ability to receive user input in all languages.
+* Ability to edit every single input that is already saved in the table.
 * Ability to show the stored data on front-end, that gets updated dynamically.
 * Equipped with many different type of form fields which limits the user to enter relevant/correct information in case it was needed.
 * Perfect for collecting people's information, inquiries and many other purposes such as online contests.
@@ -84,27 +85,31 @@ Make sure you have selected "Email" as the "Field Type" when defining the form f
 
 == Changelog ==
 
-=2.3.1=
+= 2.4.1 =
+* Added the ability to edit every single entry that is already saved in the table.
+* Ability to remove rows of inputted data.
+
+= 2.3.1 =
 * Added the ability to show the stored data on front-end.
 * Improved the allowed symbols while maintaining the security.
 
-=2.2.7=
+= 2.2.7 =
 * Some remaining errors fixed
 * A minor bug that might happen in rare cases will be fixed in future release (Please the Other Notes section)
 * Complete German Translation
 
-=2.2.6=
+= 2.2.6 =
 * Added a few features
 
-=2.2.5=
+= 2.2.5 =
 * Added German Translation
 * Added useful hints
 * bugs fixed
 
-=2.2.3=
+= 2.2.3 =
 * Ability to limit the size of file upload
 
-=2.2.2=
+= 2.2.2 =
 * Ability to reorder form fields
 * Bugs fixed
 * Made the plugin translation ready
@@ -124,6 +129,10 @@ Make sure you have selected "Email" as the "Field Type" when defining the form f
 * First Release
 
 == Upgrade Notice ==
+= 2.4.1 =
+* Added the ability to edit every single entry that is already saved in the table.
+* Ability to remove rows of inputted data.
+
 =2.3.1=
 Added the ability to show the stored data on front-end
 
@@ -134,8 +143,8 @@ Some errors fixed
 Stable version
 
 =2.2.5=
-Added the ability to limit the size of file upload. Remaining bugs are fixed.
-Added German translation.
+* Added the ability to limit the size of file upload. Remaining bugs are fixed.
+* Added German translation.
 
 = 2.2.2 =
 Important bug fixes and features are made to this version. Update immediately to take advantage of the new release.
